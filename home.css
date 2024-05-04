@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: plum;
+}
+
+.Navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 242, 0);
+}
+
+.Nav1 {
+    margin-left: 20px;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.Nav3 {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px
+}
+
+.li-nav {
+    margin: 10px;
+    padding: 20px;
+}
+
+.li-nav > a {
+    text-decoration: none;
+    color: black;
+}
+
+.li-nav:hover {
+    background-color: plum;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+header {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.carousel-item > img {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.kartu {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.h1 {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Atur lebar kartu agar hanya ada dua kartu per baris saat layar kurang dari 768px */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: calc(100% - 20px); /* Atur lebar kartu agar hanya ada satu kartu per baris saat layar kurang dari 576px */
+    }
+}
+
